@@ -1,0 +1,15 @@
+name: Deploy Shinyapps.io
+on:
+    push:
+        branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: builds R container
+    steps:
+      - uses: actions/checkout@v2 
+      - name: Build image
+      run: docker build -t main .
+      - name: execute
+      run: docker run main
