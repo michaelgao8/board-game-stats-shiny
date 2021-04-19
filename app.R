@@ -88,7 +88,8 @@ server <- function(input, output) {
                         summarize(win_percentage=mean(winner),
                                                 games_played=n()), 
                         options = list(
-                            order = list(2, 'desc'))
+                            order = list(2, 'desc'), 
+                            pageLength=25)
     )
     
     output$player_tbl <- renderDT(bg_play_data %>% 
