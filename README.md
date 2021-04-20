@@ -1,6 +1,6 @@
 # Board Game Stats Shiny App
 
-https://github.com/michaelgao8/board-game-stats-app-shiny/actions/workflows/main.yml/badge.svg
+https://github.com/michaelgao8/board-game-stats-shiny/actions/workflows/main.yml/badge.svg
 
 A Shiny app that displays stats about board games played. Data is tracked and exported from [Board Game Stats]("bgstatsapp.com").
 
